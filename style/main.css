@@ -1,0 +1,49 @@
+/* Declarando variáveis, pois vou precisar
+reutilizar essas cores algumas vezes em meu código
+,ou seja, repetir, desta forma, quando alterar
+em um ponto, altero nas demais, ganho produtividade*/
+:root{
+    --vermelho: #E50914;
+    --preta:#141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* Para os elementos não romperem as bordas
+    da caixa */
+    box-sizing: border-box;
+}
+
+body{
+    /* Utilizando a variável */
+    background: var(--preta);,
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Alinhamento dos elementos em tela, flex */
+header .container{
+    /* Dispõe os elementos no eixo X */
+    display: flex;
+    /* Alinha os elementos no eixo Y */
+    align-items: center;
+    /* Alinha os elementos no eixo X, na horizontal */
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 15px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+/* Para quando passar o mouse em cima mudar a cor */
+header nav a:hover{    
+    color: #fff;
+    
+}
