@@ -13,11 +13,12 @@ em um ponto, altero nas demais, ganho produtividade*/
     da caixa */
     box-sizing: border-box;
 }
-
+/* Elementos base */
 body{
     /* Utilizando a variável */
-    background: var(--preta);,
+    background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 /* Alinhamento dos elementos em tela, flex */
@@ -28,6 +29,7 @@ header .container{
     align-items: center;
     /* Alinha os elementos no eixo X, na horizontal */
     justify-content: space-between;
+    flex-direction: row;
 }
 
 header .logo{
@@ -46,4 +48,24 @@ header nav a{
 header nav a:hover{    
     color: #fff;
     
+}
+
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    /* linear-gradient() cria uma camada fina de cor
+    sobre a imagem */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+.titulo{
+    font-size: 40px;
 }
