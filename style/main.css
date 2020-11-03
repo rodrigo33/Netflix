@@ -72,12 +72,15 @@ header nav a:hover{
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
+
+
 .botao{
     /* Uso rgba 1-cor do vermelho, 2-cor do verde, 
     3-cor do azul, 4-camada alfa da o tom de tranparência*/
     background-color: rgba(0,0,0,.50);
     border:none;   
     color: white;
+    
 
     padding: 15px 30px;
     margin-right: 15px;
@@ -87,19 +90,28 @@ header nav a:hover{
     /* inserindo um tempo de transição */
     transition: .3s ease all;
 }
+.botao a{
+    text-decoration: none;
+    color: white;
+}
 .botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao a:hover{
     background-color: white;
     color: black;
 }
 .botao i{
     margin-right: 8px;
 }
+
 .container{
     margin-left: 20px;
 }
 
 .filme-principal .container{
-    width: 70%;
+    width: 50%;
 }
 
 /* classe para largura e altura das imagens */
